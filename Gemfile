@@ -6,8 +6,8 @@ group :test do
 end
 
 gem "rake"
-gem "jruby-openssl", :platforms => :jruby
-gem 'msgpack-jruby', :require => 'msgpack', :platforms => :jruby
+gem "jruby-openssl", :platform => :jruby
+gem 'msgpack-jruby', :require => 'msgpack', :platform => :jruby
 gem 'msgpack', :platforms => [:mri, :rbx]
 gem 'atomic', "~> 1.1"
 
