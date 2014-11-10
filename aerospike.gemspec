@@ -20,5 +20,7 @@ Gem::Specification.new do |s|
   s.post_install_message = "Thank you for using Aerospike!\nYou can report issues on github.com/aerospike/aerospike-client-ruby"
   s.add_dependency("atomic", '~> 1.1')
   s.add_dependency("msgpack", '~> 0.5') if RUBY_PLATFORM != "java"
+
   s.add_dependency("msgpack-jruby", '~> 1.4.0') if RUBY_PLATFORM == "java"
+  s.add_dependency("jruby-openssl") if RUBY_PLATFORM == "java"
 end
